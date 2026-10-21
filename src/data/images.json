@@ -1,0 +1,247 @@
+{
+ "sbt/32": {
+  "src": "/images/sbt/32.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/33": {
+  "src": "/images/sbt/33.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/34": {
+  "src": "/images/sbt/34.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/35": {
+  "src": "/images/sbt/35.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/36": {
+  "src": "/images/sbt/36.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/37": {
+  "src": "/images/sbt/37.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/38": {
+  "src": "/images/sbt/38.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/39": {
+  "src": "/images/sbt/39.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/40": {
+  "src": "/images/sbt/40.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/41": {
+  "src": "/images/sbt/41.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "sbt/42": {
+  "src": "/images/sbt/42.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "jassy/27": {
+  "src": "/images/jassy/27.webp",
+  "w": 1600,
+  "h": 1665
+ },
+ "jassy/28": {
+  "src": "/images/jassy/28.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "jassy/29": {
+  "src": "/images/jassy/29.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "jassy/30": {
+  "src": "/images/jassy/30.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "jassy/31": {
+  "src": "/images/jassy/31.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "imobcoin/43": {
+  "src": "/images/imobcoin/43.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "imobcoin/44": {
+  "src": "/images/imobcoin/44.webp",
+  "w": 1600,
+  "h": 998
+ },
+ "imobcoin/45": {
+  "src": "/images/imobcoin/45.webp",
+  "w": 1600,
+  "h": 1408
+ },
+ "imobcoin/46": {
+  "src": "/images/imobcoin/46.webp",
+  "w": 1600,
+  "h": 1972
+ },
+ "imobcoin/47": {
+  "src": "/images/imobcoin/47.webp",
+  "w": 1600,
+  "h": 1241
+ },
+ "imobcoin/48": {
+  "src": "/images/imobcoin/48.webp",
+  "w": 563,
+  "h": 2000
+ },
+ "imobcoin/49": {
+  "src": "/images/imobcoin/49.webp",
+  "w": 1600,
+  "h": 910
+ },
+ "imobcoin/50": {
+  "src": "/images/imobcoin/50.webp",
+  "w": 1600,
+  "h": 900
+ },
+ "space-journey/51": {
+  "src": "/images/space-journey/51.webp",
+  "w": 1232,
+  "h": 2000
+ },
+ "space-journey/52": {
+  "src": "/images/space-journey/52.webp",
+  "w": 938,
+  "h": 2000
+ },
+ "space-journey/53": {
+  "src": "/images/space-journey/53.webp",
+  "w": 728,
+  "h": 2000
+ },
+ "space-journey/54": {
+  "src": "/images/space-journey/54.webp",
+  "w": 608,
+  "h": 2000
+ },
+ "space-journey/55": {
+  "src": "/images/space-journey/55.webp",
+  "w": 654,
+  "h": 2000
+ },
+ "casino/19": {
+  "src": "/images/casino/19.webp",
+  "w": 1600,
+  "h": 898
+ },
+ "casino/20": {
+  "src": "/images/casino/20.webp",
+  "w": 1600,
+  "h": 898
+ },
+ "casino/21": {
+  "src": "/images/casino/21.webp",
+  "w": 1600,
+  "h": 898
+ },
+ "casino/22": {
+  "src": "/images/casino/22.webp",
+  "w": 1600,
+  "h": 898
+ },
+ "casino/23": {
+  "src": "/images/casino/23.webp",
+  "w": 1600,
+  "h": 902
+ },
+ "casino/24": {
+  "src": "/images/casino/24.webp",
+  "w": 1600,
+  "h": 1816
+ },
+ "casino/25": {
+  "src": "/images/casino/25.webp",
+  "w": 1600,
+  "h": 1022
+ },
+ "casino/26": {
+  "src": "/images/casino/26.webp",
+  "w": 1600,
+  "h": 1022
+ },
+ "analytics-dashboard/8": {
+  "src": "/images/analytics-dashboard/8.webp",
+  "w": 1600,
+  "h": 1109
+ },
+ "analytics-dashboard/9": {
+  "src": "/images/analytics-dashboard/9.webp",
+  "w": 1600,
+  "h": 972
+ },
+ "analytics-dashboard/10": {
+  "src": "/images/analytics-dashboard/10.webp",
+  "w": 1600,
+  "h": 1172
+ },
+ "analytics-dashboard/11": {
+  "src": "/images/analytics-dashboard/11.webp",
+  "w": 1594,
+  "h": 2000
+ },
+ "analytics-dashboard/12": {
+  "src": "/images/analytics-dashboard/12.webp",
+  "w": 1471,
+  "h": 2000
+ },
+ "analytics-dashboard/13": {
+  "src": "/images/analytics-dashboard/13.webp",
+  "w": 1600,
+  "h": 1492
+ },
+ "analytics-dashboard/14": {
+  "src": "/images/analytics-dashboard/14.webp",
+  "w": 1600,
+  "h": 1340
+ },
+ "analytics-dashboard/15": {
+  "src": "/images/analytics-dashboard/15.webp",
+  "w": 1600,
+  "h": 1662
+ },
+ "analytics-dashboard/16": {
+  "src": "/images/analytics-dashboard/16.webp",
+  "w": 1600,
+  "h": 1464
+ },
+ "analytics-dashboard/17": {
+  "src": "/images/analytics-dashboard/17.webp",
+  "w": 1600,
+  "h": 1159
+ },
+ "analytics-dashboard/18": {
+  "src": "/images/analytics-dashboard/18.webp",
+  "w": 1600,
+  "h": 1054
+ },
+ "space-journey/cover": {
+  "src": "/images/space-journey/cover.webp",
+  "w": 1232,
+  "h": 700
+ }
+}

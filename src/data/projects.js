@@ -1,0 +1,183 @@
+import manifest from './images.json'
+
+// Look up an optimized image by project slug + original number.
+export const img = (slug, n) => {
+  const m = manifest[`${slug}/${n}`]
+  if (!m) throw new Error(`Missing image ${slug}/${n}`)
+  return m
+}
+
+const C = {
+  blue: ['#8FB0F5', '#3A5FCF'],
+  coral: ['#F28C86', '#D9534F'],
+  green: ['#A8DDA8', '#2F8F46'],
+  sun: ['#FFDF8A', '#B97F00'],
+  purple: ['#C5B3F2', '#7B5BD6'],
+  orange: ['#F7B27A', '#C8651B'],
+}
+const acc = (c) => ({ accent: C[c][0], accentText: C[c][1] })
+
+export const projects = [
+  {
+    slug: 'sbt',
+    level: 1,
+    cardTitle: 'SBT WEBSITE REDESIGN',
+    cardSub: 'WEB REDESIGN / MEDIA',
+    title: 'REDESIGN WEBSITE SBT',
+    category: 'WEB DESIGN / MEDIA',
+    tagline: 'A new concept for all the SBT channel websites: identity, UX, UI and motion.',
+    ...acc('blue'),
+    stars: 3,
+    cover: img('sbt', 33),
+    hero: img('sbt', 33),
+    meta: [
+      ['ROLE', 'UX/UI DESIGNER'],
+      ['TIMELINE', 'MAY - JUN 2024'],
+      ['PLATFORM', 'WEB / MOBILE'],
+      ['STAGES', 'BRIEF / COMPETITIVE / PROTOTYPE / VISUAL'],
+    ],
+    sections: [
+      { label: '[ 01 / SYSTEM ]', title: 'DESIGN STAGES', sub: 'Logos, header types and dimensions shared across every vertical.', images: [{ ...img('sbt', 42) }] },
+      { label: '[ 02 / VERTICAL ]', title: 'SBT NEWS', sub: 'Blue vertical: web home, article pages and the mobile app experience.', ...acc('blue'), images: [img('sbt', 34), img('sbt', 41)] },
+      { label: '[ 03 / VERTICAL ]', title: 'SBT SPORTS', sub: 'Green vertical: highlights, league tables and latest news.', ...acc('green'), images: [img('sbt', 35), img('sbt', 36)] },
+      { label: '[ 04 / VERTICAL ]', title: 'SBT POP', sub: 'Pink vertical: horoscope, celebrities, films and a long-form article layout.', ...acc('coral'), images: [img('sbt', 37), img('sbt', 38)] },
+      { label: '[ 05 / VERTICAL ]', title: 'SBT TV', sub: 'Orange vertical: programme guide, trending news and the full shows grid.', ...acc('orange'), images: [img('sbt', 39), img('sbt', 40)] },
+      { title: '', images: [img('sbt', 32)] },
+    ],
+  },
+  {
+    slug: 'jassy',
+    level: 2,
+    cardTitle: 'J.ASSY SELENIUM',
+    cardSub: 'TRACTOR UI / ISOBUS',
+    title: 'J.ASSY SELENIUM',
+    category: 'UI DESIGN / INDUSTRIAL',
+    tagline: 'A tractor interface for ISOBUS screens, built to be read at a glance in the field.',
+    ...acc('green'),
+    stars: 2,
+    cover: img('jassy', 30),
+    hero: img('jassy', 30),
+    meta: [
+      ['ROLE', 'UX/UI DESIGNER'],
+      ['TIMELINE', '06/2022 - 03/2023'],
+      ['PLATFORM', 'ISOBUS DISPLAY'],
+      ['TOOLS', 'FIGMA / SKETCH'],
+    ],
+    sections: [
+      { label: '[ 01 / PRODUCT ]', title: 'TRACTOR INTERFACE', sub: 'Product Selenium: font, colours, logo and icon set.', images: [img('jassy', 31)] },
+      { label: '[ 02 / WIREFRAMES ]', title: 'ISOBUS WIREFRAMES', sub: 'Low-fidelity layouts for the in-cab screen: readings, sections and calibration.', images: [img('jassy', 29)] },
+      { label: '[ 03 / FLOW ]', title: 'FROM WIREFRAME TO UI', sub: 'Section settings wireframes, then the final planting and flow screens.', images: [{ ...img('jassy', 27), max: 1000 }], center: true },
+      { label: '[ 04 / UI ]', title: 'MANIFOLD UI SCREENS', sub: 'Final screens for manifold monitoring, hit rates and alerts.', images: [img('jassy', 28)] },
+    ],
+  },
+  {
+    slug: 'imobcoin',
+    level: 3,
+    cardTitle: 'IMOBCOIN',
+    cardSub: 'LANDING PAGE / DASHBOARD',
+    title: 'IMOBCOIN',
+    category: 'PRODUCT / FINTECH',
+    tagline: 'A real-estate backed crypto brand: identity, landing page, sign-up flow and dashboard.',
+    ...acc('sun'),
+    stars: 3,
+    cover: img('imobcoin', 50),
+    hero: img('imobcoin', 50),
+    meta: [
+      ['ROLE', 'UX/UI DESIGNER'],
+      ['TIMELINE', '5 WEEKS'],
+      ['PLATFORM', 'WEB / DASHBOARD'],
+      ['TOOLS', 'FIGMA / BLENDER'],
+    ],
+    sections: [
+      { label: '[ 01 / PLAN ]', title: 'DESIGN STAGES', sub: 'Five weeks, from pre-project analysis to development handoff.', images: [img('imobcoin', 43)] },
+      { label: '[ 02 / MAP ]', title: 'INFORMATION ARCHITECTURE', sub: 'Helps SEO and efficiency in the development flow.', images: [img('imobcoin', 44)] },
+      { label: '[ 03 / PLAYERS ]', title: 'PERSONAS', sub: 'Interviews to identify the target audience.', images: [img('imobcoin', 45)] },
+      { label: '[ 04 / INVENTORY ]', title: 'TYPOGRAPHY & COLOURS', sub: 'Archia type family, gradient palette and brand applications.', images: [{ ...img('imobcoin', 46), max: 1000 }], center: true },
+      { label: '[ 05 / SCOUTING ]', title: 'BENCHMARKING', sub: 'Peculiarities, attention points and differentials against crypto platforms.', images: [img('imobcoin', 47)] },
+      { label: '[ 06 / CONCEPT ]', title: 'LANDING PAGE, DASHBOARD & SIGN-UP', sub: 'The final concept across the key screens.', images: [{ ...img('imobcoin', 48), max: 563 }], center: true },
+      { label: '[ 07 / SCORE ]', title: 'RESULTS', sub: 'One unique solution for Imobcoin.', images: [img('imobcoin', 49)] },
+    ],
+  },
+  {
+    slug: 'space-journey',
+    level: 4,
+    cardTitle: 'SPACE JOURNEY',
+    cardSub: 'EDUCATIONAL APP / TABLET',
+    title: 'SPACE JOURNEY',
+    category: 'UX DESIGN / EDUCATION',
+    tagline: 'An educational space app for kids, designed for the NASA JPL x Adobe Creative Jam.',
+    ...acc('coral'),
+    stars: 2,
+    cover: img('space-journey', 'cover'),
+    hero: { ...img('space-journey', 51), max: 1232 },
+    meta: [
+      ['ROLE', 'UX LEAD'],
+      ['TIMELINE', '1 WEEK'],
+      ['PLATFORM', 'TABLET APP'],
+      ['TOOLS', 'ADOBE XD / PHOTOSHOP'],
+    ],
+    sections: [
+      { label: '[ 01 / PROCESS ]', title: 'DESIGN PROCESS', sub: 'Define and empathize: the 5 W questions, competitor analysis and user stories.', images: [{ ...img('space-journey', 55), max: 900 }], center: true },
+      { label: '[ 02 / IDEATE ]', title: 'IDEATE & DESIGN', sub: 'Essential features, the user flow and wireframes on a 12-column grid.', images: [{ ...img('space-journey', 54), max: 840 }], center: true },
+      { label: '[ 03 / INVENTORY ]', title: 'STYLE GUIDE & PROTOTYPE', sub: 'Colour palette, icons, typefaces and the interactive Adobe XD prototype.', images: [{ ...img('space-journey', 53), max: 1000 }], center: true },
+      { label: '[ 04 / SCORE ]', title: 'MOCKUPS & FINAL REFLECTIONS', sub: 'The final screens, what we learned and the next steps.', images: [{ ...img('space-journey', 52), max: 1000 }], center: true },
+    ],
+  },
+  {
+    slug: 'casino',
+    level: 5,
+    cardTitle: 'CASINO WEBSITE',
+    cardSub: 'IGAMING / WEB & MOBILE',
+    title: 'CASINO WEBSITE',
+    category: 'WEB DESIGN / IGAMING',
+    tagline: 'A bold, adaptive casino experience with dynamic animation, tournaments and a sport section.',
+    ...acc('purple'),
+    stars: 3,
+    cover: img('casino', 23),
+    hero: img('casino', 23),
+    meta: [
+      ['ROLE', 'UI DESIGNER'],
+      ['TIMELINE', '2024'],
+      ['PLATFORM', 'WEB / MOBILE'],
+      ['TOOLS', 'FIGMA / SPLINE'],
+    ],
+    sections: [
+      { label: '[ 01 / BRIEF ]', title: 'OVERVIEW & FLOWS', sub: 'Stylish, user-friendly interface with dynamic animations, bold colour contrasts and intuitive navigation.', images: [img('casino', 21), img('casino', 22)] },
+      { label: '[ 02 / SYSTEM ]', title: 'DESIGN SYSTEM & THEMES', sub: 'Dark and light mode, colour tokens, size libraries, desktop and mobile: 24 unique pages.', images: [img('casino', 20), img('casino', 19)] },
+      { label: '[ 03 / BONUS LEVEL ]', title: 'GAME PLUS', sub: 'A second brand built on the same system: adaptive design, flows and components.', images: [{ ...img('casino', 24), max: 1000 }, img('casino', 26)], center: true },
+      { title: '', images: [img('casino', 25)] },
+    ],
+  },
+  {
+    slug: 'analytics-dashboard',
+    level: 6,
+    cardTitle: 'ANALYTICS DASHBOARD',
+    cardSub: 'SAAS / CRM ANALYTICS',
+    title: 'ANALYTICS DASHBOARD',
+    category: 'PRODUCT / SAAS',
+    tagline: 'Simplifying growth through insight: a CRM analytics dashboard that turns complex data into clear, actionable decisions.',
+    ...acc('orange'),
+    stars: 3,
+    cover: img('analytics-dashboard', 18),
+    hero: img('analytics-dashboard', 18),
+    meta: [
+      ['ROLE', 'PRODUCT DESIGNER'],
+      ['TIMELINE', '12 WEEKS / 6 SPRINTS'],
+      ['PLATFORM', 'WEB APP'],
+      ['TOOLS', 'FIGMA / FRAMER'],
+    ],
+    sections: [
+      { label: '[ 01 / BRIEF ]', title: 'OVERVIEW', sub: 'A centralized platform to unify customer data, streamline sales workflows and extract predictive analytics.', images: [img('analytics-dashboard', 10), img('analytics-dashboard', 8)] },
+      { label: '[ 02 / MAP ]', title: 'USER FLOW', sub: 'A streamlined flow with easy onboarding, a customizable dashboard and quick access to key actions.', images: [img('analytics-dashboard', 16)] },
+      { label: '[ 03 / PROCESS ]', title: 'DESIGN PROCESS & TIMELINE', sub: 'Clear milestones to maintain steady progress: Discover, Design, Deliver.', images: [{ ...img('analytics-dashboard', 12), max: 880 }], center: true },
+      { label: '[ 04 / UI ]', title: 'UI DESIGN BREAKDOWN', sub: 'Focused on clear visuals, easy accessibility and seamless navigation.', images: [{ ...img('analytics-dashboard', 11), max: 920 }], center: true },
+      { label: '[ 05 / SCREEN ]', title: 'WORKS SPACE', sub: 'Cards, scheduling and quick actions in one workspace.', images: [img('analytics-dashboard', 13)] },
+      { label: '[ 06 / INVENTORY ]', title: 'COLORS & TYPOGRAPHY', images: [img('analytics-dashboard', 14), img('analytics-dashboard', 15)], row: true },
+      { label: '[ 07 / SCORE ]', title: 'KEY RESULTS', sub: 'Post-launch metrics.', images: [img('analytics-dashboard', 17)] },
+      { title: '', images: [img('analytics-dashboard', 9)] },
+    ],
+  },
+]
+
+export const getProject = (slug) => projects.find((p) => p.slug === slug)
+export const nextProject = (p) => projects[p.level % projects.length]
