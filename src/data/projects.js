@@ -4,7 +4,7 @@ import manifest from './images.json'
 export const img = (slug, n) => {
   const m = manifest[`${slug}/${n}`]
   if (!m) throw new Error(`Missing image ${slug}/${n}`)
-  return m
+  return { ...m, src: import.meta.env.BASE_URL + m.src.replace(/^\//, '') }
 }
 
 const C = {
