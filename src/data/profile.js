@@ -10,8 +10,8 @@ export const profile = {
     '"I work end to end - discovery, research synthesis, flow mapping, high-fidelity design, usability testing and engineering-ready specs - and my front-end knowledge helps me work closely with developers."',
   resume: `${import.meta.env.BASE_URL}resume.pdf`,
   links: [
-    ['PORTFOLIO (FRAMER)', 'https://cherished-operations-791449.framer.app/'],
-    ['GITHUB PAGES', 'https://juanpib.github.io/JP/'],
+    ['WHATSAPP', 'https://wa.me/5513981616876'],
+    ['GITHUB PAGES', 'https://juanpih.github.io/Portfolio/'],
   ],
 }
 
