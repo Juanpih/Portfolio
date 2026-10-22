@@ -8,12 +8,15 @@ export const img = (slug, n) => {
 }
 
 const C = {
-  blue: ['#8FB0F5', '#3A5FCF'],
-  coral: ['#F28C86', '#D9534F'],
-  green: ['#A8DDA8', '#2F8F46'],
-  sun: ['#FFDF8A', '#B97F00'],
-  purple: ['#C5B3F2', '#7B5BD6'],
-  orange: ['#F7B27A', '#C8651B'],
+  cyan: ['#00F0FF', '#00F0FF'],
+  mag: ['#FF2E93', '#FF2E93'],
+  lime: ['#B6FF3B', '#B6FF3B'],
+  sun: ['#FFD23F', '#FFD23F'],
+  purple: ['#A56BFF', '#A56BFF'],
+  orange: ['#FF8A3D', '#FF8A3D'],
+  news: ['#2F6BFF', '#4D86FF'],
+  sports: ['#1FA84F', '#2FD068'],
+  tv: ['#FF8A1F', '#FF8A1F'],
 }
 const acc = (c) => ({ accent: C[c][0], accentText: C[c][1] })
 
@@ -26,7 +29,7 @@ export const projects = [
     title: 'REDESIGN WEBSITE SBT',
     category: 'WEB DESIGN / MEDIA',
     tagline: 'A new concept for all the SBT channel websites: identity, UX, UI and motion.',
-    ...acc('blue'),
+    ...acc('cyan'),
     stars: 3,
     cover: img('sbt', 33),
     hero: img('sbt', 33),
@@ -38,10 +41,10 @@ export const projects = [
     ],
     sections: [
       { label: '[ 01 / SYSTEM ]', title: 'DESIGN STAGES', sub: 'Logos, header types and dimensions shared across every vertical.', images: [{ ...img('sbt', 42) }] },
-      { label: '[ 02 / VERTICAL ]', title: 'SBT NEWS', sub: 'Blue vertical: web home, article pages and the mobile app experience.', ...acc('blue'), images: [img('sbt', 34), img('sbt', 41)] },
-      { label: '[ 03 / VERTICAL ]', title: 'SBT SPORTS', sub: 'Green vertical: highlights, league tables and latest news.', ...acc('green'), images: [img('sbt', 35), img('sbt', 36)] },
-      { label: '[ 04 / VERTICAL ]', title: 'SBT POP', sub: 'Pink vertical: horoscope, celebrities, films and a long-form article layout.', ...acc('coral'), images: [img('sbt', 37), img('sbt', 38)] },
-      { label: '[ 05 / VERTICAL ]', title: 'SBT TV', sub: 'Orange vertical: programme guide, trending news and the full shows grid.', ...acc('orange'), images: [img('sbt', 39), img('sbt', 40)] },
+      { label: '[ 02 / VERTICAL ]', title: 'SBT NEWS', sub: 'Blue vertical: web home, article pages and the mobile app experience.', ...acc('news'), images: [img('sbt', 34), img('sbt', 41)] },
+      { label: '[ 03 / VERTICAL ]', title: 'SBT SPORTS', sub: 'Green vertical: highlights, league tables and latest news.', ...acc('sports'), images: [img('sbt', 35), img('sbt', 36)] },
+      { label: '[ 04 / VERTICAL ]', title: 'SBT POP', sub: 'Pink vertical: horoscope, celebrities, films and a long-form article layout.', ...acc('mag'), images: [img('sbt', 37), img('sbt', 38)] },
+      { label: '[ 05 / VERTICAL ]', title: 'SBT TV', sub: 'Orange vertical: programme guide, trending news and the full shows grid.', ...acc('tv'), images: [img('sbt', 39), img('sbt', 40)] },
       { title: '', images: [img('sbt', 32)] },
     ],
   },
@@ -53,7 +56,7 @@ export const projects = [
     title: 'J.ASSY SELENIUM',
     category: 'UI DESIGN / INDUSTRIAL',
     tagline: 'A tractor interface for ISOBUS screens, built to be read at a glance in the field.',
-    ...acc('green'),
+    ...acc('lime'),
     stars: 2,
     cover: img('jassy', 30),
     hero: img('jassy', 30),
@@ -106,7 +109,7 @@ export const projects = [
     title: 'SPACE JOURNEY',
     category: 'UX DESIGN / EDUCATION',
     tagline: 'An educational space app for kids, designed for the NASA JPL x Adobe Creative Jam.',
-    ...acc('coral'),
+    ...acc('mag'),
     stars: 2,
     cover: img('space-journey', 'cover'),
     hero: { ...img('space-journey', 51), max: 1232 },

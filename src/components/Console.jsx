@@ -10,7 +10,7 @@ export default function Console() {
           <div className="console__screen">
             <span className="console__hi">HI-SCORE 099999</span>
             <span className="console__press">PRESS START</span>
-            <Sprite rows={INVADER} cell={6} color="#2F8F46" className="console__invader" />
+            <Sprite rows={INVADER} cell={6} color="var(--green)" className="console__invader" />
             <span className="console__lives">
               {[0, 1, 2].map((i) => (
                 <Sprite key={i} rows={HEART} cell={3} color="var(--coral)" />
