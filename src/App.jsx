@@ -1,3 +1,5 @@
+//Teste juanzito
+
 import { useEffect } from 'react'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Home from './pages/Home.jsx'
@@ -19,7 +21,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/:slug" element={<ProjectPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} /> 
+        
       </Routes>
     </>
   )
