@@ -8,7 +8,7 @@ export const profile = {
     'About seven years of UX research, product design and UX/UI, with front-end knowledge that strengthens collaboration with engineering teams. Specialised in design systems and authentication and account-security experiences, including SSO and MFA.',
   dialog:
     '"I work end to end - discovery, research synthesis, flow mapping, high-fidelity design, usability testing and engineering-ready specs - and my front-end knowledge helps me work closely with developers."',
-  resume: '/resume.pdf',
+  resume: `${import.meta.env.BASE_URL}resume.pdf`,
   links: [
     ['PORTFOLIO (FRAMER)', 'https://cherished-operations-791449.framer.app/'],
     ['GITHUB PAGES', 'https://juanpib.github.io/JP/'],
